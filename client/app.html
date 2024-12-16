@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangalore Home Price Prediction</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="img"></div>
+    <div class="container">
+        <div class="form-container">
+            <h1 class="title">Bangalore Home Price Prediction</h1>
+            <form id="homePriceForm" class="form">
+                <div class="form-group">
+                    <label for="uiSqft">Area (Square Feet)</label>
+                    <input class="input" type="number" id="uiSqft" name="uiSqft" value="1000" required>
+                </div>
+                <div class="form-group">
+                    <label>BHK</label>
+                    <div class="switch-field" id="bhkOptions">
+                        <!-- BHK options will be dynamically added here -->
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Bathrooms</label>
+                    <div class="switch-field" id="bathOptions">
+                        <!-- Bathroom options will be dynamically added here -->
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="uiLocations">Location</label>
+                    <select class="input" id="uiLocations" name="uiLocations" required>
+                        <option value="" disabled selected>Loading...</option>
+                        <!-- Locations will be loaded dynamically -->
+                    </select>
+                </div>
+                <button class="btn submit" type="submit">Estimate Price</button>
+            </form>
+            <div id="uiEstimatedPrice" class="result"></div>
+            <div id="loadingOverlay" class="overlay">
+                <div class="loader"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
