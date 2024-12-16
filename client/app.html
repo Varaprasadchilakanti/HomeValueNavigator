@@ -14,7 +14,7 @@
             <form id="homePriceForm" class="form">
                 <div class="form-group">
                     <label for="uiSqft">Area (Square Feet)</label>
-                    <input class="input" type="number" id="uiSqft" name="uiSqft" value="1000" required>
+                    <input class="input" type="number" id="uiSqft" name="uiSqft" value="1000" required aria-label="Enter total area in square feet">
                 </div>
                 <div class="form-group">
                     <label>BHK</label>
@@ -30,14 +30,14 @@
                 </div>
                 <div class="form-group">
                     <label for="uiLocations">Location</label>
-                    <select class="input" id="uiLocations" name="uiLocations" required>
+                    <select class="input" id="uiLocations" name="uiLocations" required aria-label="Select a location">
                         <option value="" disabled selected>Loading...</option>
                         <!-- Locations will be loaded dynamically -->
                     </select>
                 </div>
                 <button class="btn submit" type="submit">Estimate Price</button>
             </form>
-            <div id="uiEstimatedPrice" class="result"></div>
+            <div id="uiEstimatedPrice" class="result" role="alert" aria-live="polite"></div>
             <div id="loadingOverlay" class="overlay">
                 <div class="loader"></div>
             </div>
