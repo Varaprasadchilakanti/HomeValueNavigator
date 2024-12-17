@@ -1,4 +1,4 @@
-# [Home Value Navigator](https://varaprasadchilakanti.github.io/HomeValueNavigator/client/app.html)
+## [Home Value Navigator](https://varaprasadchilakanti.github.io/HomeValueNavigator/client/app.html)
 
 **Project Description**:
 Home Value Navigator is a real estate price prediction platform designed to assist real estate professionals, investors, and potential homebuyers in understanding property values in the Bengaluru area. Utilizing advanced machine learning algorithms and modern web technologies, this project aims to provide accurate and reliable price predictions based on historical data.
